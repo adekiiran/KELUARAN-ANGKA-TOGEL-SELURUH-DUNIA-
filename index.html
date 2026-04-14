@@ -2,408 +2,204 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LANAYA88</title>
+
 <style>
 body{
 margin:0;
-font-family:Arial,sans-serif;
-background:#cfd8e3;
+font-family:Arial;
+background:linear-gradient(160deg,#06131f,#0d2a3f);
+color:#fff;
 }
-.container{
-width:1200px;
-margin:auto;
-background:#d8d8d8;
-}
+
+.container{max-width:1300px;margin:auto}
+
 .header{
-background:#c6d4e2;
+background:linear-gradient(90deg,#ffd700,#ff9800);
+color:#000;
 text-align:center;
 padding:20px;
-font-size:50px;
-font-weight:bold;
+font-size:40px;
+font-weight:900;
 }
+
+.bar{
+background:#12344a;
+margin:10px;
+padding:10px;
+border-radius:30px;
+overflow:hidden;
+}
+.bar span{
+display:inline-block;
+animation:jalan 10s linear infinite;
+}
+@keyframes jalan{
+0%{transform:translateX(100%)}
+100%{transform:translateX(-100%)}
+}
+
 .title{
-background:#f3eac4;
-text-align:center;
-padding:15px;
-font-size:28px;
+background:#ffd700;
+color:#000;
+padding:8px;
 font-weight:bold;
-border:2px solid #999;
+margin-top:10px;
 }
-.banner-top{
+
+.grid{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:10px;
+}
+
+.row{
 display:flex;
+justify-content:space-between;
+padding:6px 10px;
+border-bottom:1px solid #333;
+font-size:13px;
 }
-.banner-box{
-flex:1;
-background:#9fc0e0;
-text-align:center;
-padding:15px;
-font-size:24px;
-font-weight:bold;
-border:1px solid #666;
-}
-.result-title{
-background:#f5cfcf;
-text-align:center;
-padding:10px;
-font-size:22px;
+
+.row a{
+color:#00e5ff;
+text-decoration:none;
 font-weight:bold;
 }
-.main{
+
+.row span{color:#aaa}
+
+/* 🔥 TOMBOL KEDIP */
+.blink{
+animation:blink 1s infinite;
+}
+@keyframes blink{
+0%,100%{opacity:1}
+50%{opacity:0.3}
+}
+
+/* 🔥 SLIDER IKLAN */
+.ads{
+overflow:hidden;
+height:400px;
+position:relative;
+}
+.ads-track{
 display:flex;
-gap:20px;
-padding:20px;
+flex-direction:column;
+animation:slide 10s infinite;
 }
-.left,.right{
-flex:1;
+.ads img{
+width:100%;
+margin-bottom:10px;
+border-radius:8px;
 }
-.side-banner{
-width:140px;
-background:#d9d0ea;
-display:flex;
-justify-content:center;
-align-items:center;
-writing-mode:vertical-rl;
-text-orientation:mixed;
-font-size:26px;
+@keyframes slide{
+0%{transform:translateY(0)}
+25%{transform:translateY(-120px)}
+50%{transform:translateY(-240px)}
+75%{transform:translateY(-360px)}
+100%{transform:translateY(0)}
+}
+
+/* 🔥 LINK GERAK */
+.link-gerak{
+color:red;
 font-weight:bold;
-border:1px solid #666;
+display:inline-block;
+animation:jalan 6s linear infinite;
+text-decoration:none;
 }
-.box{
-border:1px solid #333;
-padding:10px;
-text-align:center;
-background:#dce5f4;
-margin-bottom:3px;
-font-size:20px;
+
+/* 🔥 NOTIF */
+.notif{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#000;
+padding:10px 15px;
+border:1px solid #00ffcc;
+border-radius:10px;
+z-index:999;
 }
-.left .box:nth-child(-n+5){
-background:#dce8d3;
-font-weight:bold;
-}
-.bottom-banner{
-display:flex;
-gap:20px;
-padding:20px;
-}
-.bottom-box{
-flex:1;
-background:#f3d7d7;
-padding:25px;
-text-align:center;
-font-size:26px;
-font-weight:bold;
-border:1px solid #777;
-}
-.footer{
-display:flex;
-}
-.footer div{
-flex:1;
-padding:15px;
-text-align:center;
-font-size:20px;
-border:1px solid #777;
-}
-.footer div:nth-child(1){
-background:#efd8bf;
-}
-.footer div:nth-child(2),
-.footer div:nth-child(3){
-background:#b9d0e5;
-}
+
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
 <div class="header">LANAYA88</div>
 
-<div class="title">
-SITUS RESMI PASARAN TOGEL SELURUH DUNIA
-</div>
+<div class="bar"><span>UPDATE SETIAP HARI ➜ ➜ ➜</span></div>
+<div class="bar"><span>HASIL TOGEL TERBARU ➜ ➜ ➜</span></div>
 
-<div class="banner-top">
-<div class="banner-box">IKLAN BENNER</div>
-<div class="banner-box">IKLAN BENNER</div>
-</div>
+<div class="title">HASIL PASARAN</div>
 
-<div class="result-title">HASIL PASARAN SELURUH DUNIA</div>
+<div class="grid">
 
-<div class="main">
+<!-- DATA -->
+<div>
 
-<div class="left">
-<div class="box">DANANG</div>
-<div class="box">MAGNUM4D</div>
-<div class="box">SYDNEY</div>
-<div class="box">HONGKONG</div>
-<div class="box">SINGAPORE</div>
-<div class="box">DATA 1</div>
-<div class="box">DATA 2</div>
-<div class="box">DATA 3</div>
-<div class="box">DATA 4</div>
-<div class="box">DATA 5</div>
-<div class="box">DATA 6</div>
-<div class="box">DATA 7</div>
-<div class="box">DATA 8</div>
-<div class="box">DATA 9</div>
-<div class="box">DATA 10</div>
-<div class="box">DATA 1</div>
-<div class="box">DATA 2</div>
-<div class="box">DATA 3</div>
-<div class="box">DATA 4</div>
-<div class="box">DATA 5</div>
-<div class="box">DATA 6</div>
-<div class="box">DATA 7</div>
-<div class="box">DATA 8</div>
-<div class="box">DATA 9</div>
-<div class="box">DATA 10</div>
-</div>
-
-<div class="right">
-<div class="box">DATA 1</div>
-<div class="box">DATA 2</div>
-<div class="box">DATA 3</div>
-<div class="box">DATA 4</div>
-<div class="box">DATA 5</div>
-<div class="box">DATA 6</div>
-<div class="box">DATA 7</div>
-<div class="box">DATA 8</div>
-<div class="box">DATA 9</div>
-<div class="box">DATA 10</div>
-<div class="box">DATA 1</div>
-<div class="box">DATA 2</div>
-<div class="box">DATA 3</div>
-<div class="box">DATA 4</div>
-<div class="box">DATA 5</div>
-<div class="box">DATA 6</div>
-<div class="box">DATA 7</div>
-<div class="box">DATA 8</div>
-<div class="box">DATA 9</div>
-<div class="box">DATA 10</div>
-</div>
-
-<div class="side-banner">IKLAN BENNER</div>
+<div class="row"><a href="https://situskamu.com">MAGNUM4D 6789</a><span>|</span><a href="https://situskamu.com">GERMANY 8764</a></div>
+<div class="row"><a href="https://situskamu.com">PATTAYA 6789</a><span>|</span><a href="https://situskamu.com">OREGON 8764</a></div>
+<div class="row"><a href="https://situskamu.com">PCSO 6789</a><span>|</span><a href="https://situskamu.com">MOROCCO 8764</a></div>
 
 </div>
 
-<div class="bottom-banner">
-<div class="bottom-box">IKLAN BENNER</div>
-<div class="bottom-box">IKLAN BENNER</div>
-</div>
+<!-- IKLAN SLIDER -->
+<div class="ads">
+<div class="ads-track">
 
-<div class="footer">
-<div>WHATSAPP | TELEGRAM</div>
-<div>FACEBOOK</div>
-<div>CHAT ONLINE</div>
+<a href="https://situskamu.com"><img src="https://via.placeholder.com/300x120?text=IKLAN+1"></a>
+<a href="https://situskamu.com"><img src="https://via.placeholder.com/300x120?text=IKLAN+2"></a>
+<a href="https://situskamu.com"><img src="https://via.placeholder.com/300x120?text=IKLAN+3"></a>
+<a href="https://situskamu.com"><img src="https://via.placeholder.com/300x120?text=IKLAN+4"></a>
+
+</div>
 </div>
 
 </div>
 
-</body>
-</html><!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>LANAYA88</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#cfd8e3;
-}
-.container{
-width:1200px;
-margin:auto;
-background:#d8d8d8;
-}
-.header{
-background:#c6d4e2;
-text-align:center;
-padding:20px;
-font-size:50px;
-font-weight:bold;
-}
-.title{
-background:#f3eac4;
-text-align:center;
-padding:15px;
-font-size:28px;
-font-weight:bold;
-border:2px solid #999;
-}
-
-/* ?? ANIMASI KEDAP KEDIP */
-.blink-img {
-  animation: blinkAnim 1s infinite;
-  cursor: pointer;
-}
-@keyframes blinkAnim {
-  0%   { filter: brightness(1); transform: scale(1); }
-  50%  { filter: brightness(1.8); transform: scale(1.05); }
-  100% { filter: brightness(1); transform: scale(1); }
-}
-
-.banner-top{
-display:flex;
-}
-.banner-box{
-flex:1;
-text-align:center;
-padding:5px;
-border:1px solid #666;
-}
-
-.result-title{
-background:#f5cfcf;
-text-align:center;
-padding:10px;
-font-size:22px;
-font-weight:bold;
-}
-
-.main{
-display:flex;
-gap:20px;
-padding:20px;
-}
-.left,.right{
-flex:1;
-}
-
-.side-banner{
-width:140px;
-display:flex;
-justify-content:center;
-align-items:center;
-border:1px solid #666;
-}
-
-.box{
-border:1px solid #333;
-padding:10px;
-text-align:center;
-background:#dce5f4;
-margin-bottom:3px;
-font-size:20px;
-}
-.left .box:nth-child(-n+5){
-background:#dce8d3;
-font-weight:bold;
-}
-
-.bottom-banner{
-display:flex;
-gap:20px;
-padding:20px;
-}
-.bottom-box{
-flex:1;
-text-align:center;
-border:1px solid #777;
-}
-
-.footer{
-display:flex;
-}
-.footer div{
-flex:1;
-padding:15px;
-text-align:center;
-font-size:20px;
-border:1px solid #777;
-}
-.footer div:nth-child(1){
-background:#efd8bf;
-}
-.footer div:nth-child(2),
-.footer div:nth-child(3){
-background:#b9d0e5;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<div class="header">https://downwithabsolutes.com</div>
-
-<div class="title">
-SITUS RESMI PASARAN TOGEL SELURUH DUNIA
-</div>
-
-<!-- ?? BANNER ATAS -->
-<div class="banner-top">
-
-<div class="banner-box">
-<a href="https://LINK-KAMU.com" target="_blank">
-<img src="https://via.placeholder.com/500x150" class="blink-img" width="100%">
+<!-- LINK GERAK -->
+<div style="text-align:center;padding:10px">
+<a class="link-gerak blink" href="https://situskamu.com">
+🔥 DAFTAR & MAIN SEKARANG 🔥
 </a>
 </div>
 
-<div class="banner-box">
-<a href="https://LINK-KAMU.com" target="_blank">
-<img src="https://via.placeholder.com/500x150" class="blink-img" width="100%">
-</a>
+<!-- BOTTOM -->
+<div style="text-align:center;margin-top:10px">
+<a href="https://situskamu.com">DAFTAR</a> |
+<a href="https://situskamu.com">LOGIN</a> |
+<a href="https://situskamu.com">BONUS</a>
 </div>
 
 </div>
 
-<div class="result-title">HASIL PASARAN SELURUH DUNIA</div>
+<!-- 🔥 SCRIPT AUTO -->
+<script>
 
-<div class="main">
+// AUTO REDIRECT (5 DETIK)
+setTimeout(function(){
+window.location.href = "https://situskamu.com";
+},5000);
 
-<div class="left">
-<div class="box">CAMBODIA</div>
-<div class="box">TOTO MACAU </div>
-<div class="box">SYDNEY</div>
-<div class="box">SINGAPORE</div>
-<div class="box">MAGNUM</div>
-</div>
+// NOTIFIKASI FAKE
+function notif(){
+let div = document.createElement("div");
+div.className="notif";
+div.innerText="User baru saja menang besar!";
+document.body.appendChild(div);
 
-<div class="right">
-<div class="box">BOSTON NIGHT</div>
-<div class="box">ATLANTIC NIGHT</div>
-<div class="box">ORLANDO</div>
-</div>
+setTimeout(()=>{div.remove()},3000);
+}
 
-<!-- ?? BANNER SAMPING -->
-<div class="side-banner">
-<a href="https://LINK-KAMU.com" target="_blank">
-<img src="https://via.placeholder.com/140x400" class="blink-img" width="100%">
-</a>
-</div>
+setInterval(notif,8000);
 
-</div>
-
-<!-- ?? BANNER BAWAH -->
-<div class="bottom-banner">
-
-<div class="bottom-box">
-<a href="https://LINK-KAMU.com" target="_blank">
-<img src="https://via.placeholder.com/500x150" class="blink-img" width="100%">
-</a>
-</div>
-
-<div class="bottom-box">
-<a href="https://LINK-KAMU.com" target="_blank">
-<img src="https://via.placeholder.com/500x150" class="blink-img" width="100%">
-</a>
-</div>
-
-</div>
-
-<div class="footer">
-<div>WHATSAPP | TELEGRAM</div>
-<div>FACEBOOK</div>
-<div>CHAT ONLINE</div>
-</div>
-
-</div>
+</script>
 
 </body>
 </html>
